@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopedia Pop 80s</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="laser-grid"></div>
+
+    <input type="radio" name="filtro-pop" id="todo" checked hidden>
+    <input type="radio" name="filtro-pop" id="cine" hidden>
+    <input type="radio" name="filtro-pop" id="autos" hidden>
+    <input type="radio" name="filtro-pop" id="arcade" hidden>
+
+    <nav class="navbar">
+        <div class="nav-logo">RETRO<span>80S</span></div>
+        <ul class="nav-links">
+            <li><label for="todo">Todos</label></li>
+            <li><label for="cine">Cine</label></li>
+            <li><label for="autos">Autos</label></li>
+            <li><label for="arcade">Arcade</label></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Retro<span>80s</span></h1>
+        <p>La Enciclopedia Interactiva de la Cultura Pop y Ciencia Ficción</p>
+    </header>
+
+    <div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar película, auto, juego..." autocomplete="off">
+</div>
+
+    <main class="container">
+
+        <div class="card item-cine">
+            <div class="card-badge">Cine</div>
+            <div class="card-img" style="background-image: url('img/pelis/back\ to\ the\ future.jpg');"></div>
+            <div class="card-content">
+                <h3>Back to the Future (1985)</h3>
+                <p>Una obra maestra de la ciencia ficción y la comedia que definió a toda una generación. Con un guion
+                    perfecto, actuaciones carismáticas y el icónico auto DeLorean, es una película imprescindible que no
+                    ha envejecido ni un solo día.</p>
+                <a href="#modal-peli1" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-cine">
+            <div class="card-badge">Cine</div>
+            <div class="card-img" style="background-image: url('img/pelis/E.T.\ the\ Extra-Terrestrial.jpg');"></div>
+            <div class="card-content">
+                <h3>E.T. the Extra-Terrestrial (1982)</h3>
+                <p>Dirigida por Steven Spielberg, esta película es una de las mayores joyas del cine familiar. Es una
+                    historia conmovedora sobre la amistad, la empatía y la infancia, capaz de hacer llorar y sonreír a
+                    espectadores de cualquier edad.</p>
+                <a href="#modal-peli2" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-cine">
+            <div class="card-badge">Cine</div>
+            <div class="card-img" style="background-image: url('img/pelis/The\ Empire\ Strikes\ Back.jpg');"></div>
+            <div class="card-content">
+                <h3>Star Wars: The Empire Strikes Back (1980)</h3>
+                <p>Considerada por la crítica y los fans como la mejor película de toda la saga de Star Wars. Oscura,
+                    madura y con uno de los giros de guion más famosos e impactantes de la historia del cine ("Yo soy tu
+                    padre").</p>
+                <a href="#modal-peli3" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-cine">
+            <div class="card-badge">Cine</div>
+            <div class="card-img" style="background-image: url('img/pelis/Ghostbusters.jpg');"></div>
+            <div class="card-content">
+                <h3>Ghostbusters (1984)</h3>
+                <p>El equilibrio perfecto entre comedia y elementos de terror ligero. Con un elenco brillante liderado
+                    por Bill Murray y una canción principal que todo el mundo se sabe, se convirtió en un fenómeno
+                    cultural masivo de los 80.</p>
+                <a href="#modal-peli4" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-cine">
+            <div class="card-badge">Cine</div>
+            <div class="card-img" style="background-image: url('img/pelis/The\ Breakfast\ Club.jpg');"></div>
+            <div class="card-content">
+                <h3>The Breakfast Club (1985)</h3>
+                <p>La película definitiva sobre la adolescencia y el retrato más fiel de la juventud de los 80, dirigida
+                    por John Hughes. Es un drama íntimo que demuestra que, a pesar de las etiquetas sociales, todos
+                    compartimos las mismas inseguridades.</p>
+                <a href="#modal-peli5" class="btn">Explorar</a>
+            </div>
+        </div>
+
+
+        <div class="card item-autos">
+            <div class="card-badge">Autos Icónicos</div>
+            <div class="card-img" style="background-image: url('img/autos/DMC\ DeLorean.jpg');">
+            </div>
+            <div class="card-content">
+                <h3>DMC DeLorean</h3>
+                <p>El DeLorean no se diseñó para seguir tendencias, sino para desafiar al tiempo mismo. Con sus líneas
+                    afiladas y su brillo plateado, nos recuerda una época en la que el futuro se sentía al alcance de la
+                    mano. Mirarlo no es solo recordar el pasado, es revivir la nostalgia de un mañana que siempre
+                    quisimos alcanzar.</p>
+                <a href="#modal-auto1" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-autos">
+            <div class="card-badge">Autos Icónicos</div>
+            <div class="card-img" style="background-image: url('img/autos/Ferrari\ Testarossa.jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Ferrari Testarossa</h3>
+                <p>El Testarossa es el arte del exceso hecho automóvil. Cada línea de su carrocería grita audacia,
+                    capturando a la perfección el espíritu competitivo y vibrante de los 80. Nos invita a reflexionar
+                    sobre cómo un auto puede dejar de ser simple ingeniería para convertirse en una obra de arte
+                    provocativa que domina el asfalto.</p>
+                <a href="#modal-auto2" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-autos">
+            <div class="card-badge">Autos Icónicos</div>
+            <div class="card-img" style="background-image: url('img/autos/Volkswagen\ Golf\ GTI\ \(Mk2\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Volkswagen Golf GTI (Mk2)</h3>
+                <p>El verdadero clásico es aquel que lleva la emoción a las masas. El Golf GTI demostró que la
+                    adrenalina no era exclusividad de unos pocos, democratizando el rendimiento sin perder un ápice de
+                    estilo. Un recordatorio de que la verdadera grandeza a menudo se esconde en los formatos más
+                    compactos y honestos.</p>
+                <a href="#modal-auto3" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-autos">
+            <div class="card-badge">Autos Icónicos</div>
+            <div class="card-img"
+                style="background-image: url('img/autos/Lamborghini\ Countach\ \(LP5000\ QV\).jpeg');">
+            </div>
+            <div class="card-content">
+                <h3>Lamborghini Countach (LP5000 QV)</h3>
+                <p>El Countach es un desafío directo a las leyes de lo convencional; un vehículo que se niega a pasar
+                    desapercibido. Su presencia nos hace pensar en una era donde los diseñadores no temían ser polémicos
+                    ni romper esquemas. Es la prueba de que, a veces, la extravagancia es el único camino hacia la
+                    inmortalidad.</p>
+                <a href="#modal-auto4" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-autos">
+            <div class="card-badge">Autos Icónicos</div>
+            <div class="card-img" style="background-image: url('img/autos/Porsche\ 911\ Turbo\ \(930\).jfif');">
+            </div>
+            <div class="card-content">
+                <h3>Porsche 911 Turbo (930)</h3>
+                <p>El 911 Turbo de los 80 es un monumento a la conducción pura y sin filtros. En una época de transición
+                    tecnológica, este Porsche exigía respeto y destreza, recordándonos que la conexión entre el hombre y
+                    la máquina debe ser íntima, desafiante y, sobre todo, emocionante. Un balance perfecto entre
+                    elegancia exterior y furia contenida.</p>
+                <a href="#modal-auto5" class="btn">Explorar</a>
+            </div>
+        </div>
+
+
+        <div class="card item-arcade">
+            <div class="card-badge">Retro Gaming</div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Pac-Man\ \(1980\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Pac-Man (1980)</h3>
+                <p>Lanzado por Namco en 1980, este título revolucionó la industria y se convirtió en un fenómeno
+                    cultural global. El jugador controla a una esfera amarilla cuyo objetivo es comer todos los puntos
+                    de un laberinto mientras esquiva a cuatro persistentes fantasmas: Blinky, Pinky, Inky y Clyde.</p>
+                <a href="#modal-juego1" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-arcade">
+            <div class="card-badge">Retro Gaming</div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Donkey\ Kong\ \(1981\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Donkey Kong (1981)</h3>
+                <p>Diseñado por el legendario Shigeru Miyamoto para Nintendo, este juego de plataformas para arcade puso
+                    los cimientos de la industria moderna. En él, un carpintero originalmente conocido como Jumpman
+                    (quien más tarde se convertiría en Mario) debe esquivar barriles y trepar estructuras para salvar a
+                    Pauline de las garras de un gorila gigante.</p>
+                <a href="#modal-juego2" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-arcade">
+            <div class="card-badge">Retro Gaming</div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Tetris\ \(1984\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Tetris (1984)</h3>
+                <p>Creado en la Unión Soviética por el ingeniero Alekséi Pázhitnov, Tetris es el juego de puzles por
+                    excelencia. El objetivo es rotar y acomodar figuras geométricas de cuatro bloques (tetominós) que
+                    caen desde la parte superior de la pantalla para completar líneas horizontales perfectas y hacerlas
+                    desaparecer.</p>
+                <a href="#modal-juego3" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-arcade">
+            <div class="card-badge">Retro Gaming</div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Super\ Mario\ Bros.\ \(1985\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Super Mario Bros. (1985)</h3>
+                <p>El título que salvó y revitalizó la industria de las consolas caseras tras la crisis de 1983. Lanzado
+                    para la Nintendo Entertainment System (NES), lleva al jugador a través de coloridos mundos de
+                    desplazamiento lateral llenos de tuberías, enemigos y secretos, con el fin de derrotar al malvado
+                    Bowser y rescatar a la Princesa Peach.</p>
+                <a href="#modal-juego4" class="btn">Explorar</a>
+            </div>
+        </div>
+
+        <div class="card item-arcade">
+            <div class="card-badge">Retro Gaming</div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Street\ Fighter\ \(1987\).jpg');">
+            </div>
+            <div class="card-content">
+                <h3>Street Fighter (1987)</h3>
+                <p>Desarrollado por Capcom, este juego sentó las bases del género de peleas uno contra uno. Los
+                    jugadores asumen el rol del artista marcial Ryu (o su rival Ken en el segundo mando) para viajar por
+                    el mundo y derrotar a diversos oponentes utilizando golpes básicos y los ya legendarios movimientos
+                    especiales.</p>
+                <a href="#modal-juego5" class="btn">Explorar</a>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="modal-peli1" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Back to the Future</h2>
+            <p class="modal-subtitle">Volver al Futuro</p>
+            <p->Marty McFly, un típico adolescente de los 80, es enviado accidentalmente a 1955 a través de una máquina
+                del tiempo construida por el excéntrico científico "Doc" Brown. Allí, Marty interrumpe por error el
+                primer encuentro de sus padres, por lo que debe hacer que se enamoren para asegurar su propia existencia
+                y encontrar la forma de regresar al futuro.</p->
+        </div>
+    </div>
+
+    <div id="modal-peli2" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>E.T. the Extra-Terrestrial</h2>
+            <p class="modal-subtitle">E.T. el Extraterrestre</p>
+            <p->Un pequeño ser de otro planeta se queda varado en la Tierra. Un niño solitario llamado Elliott lo
+                encuentra y lo esconde en su casa. Junto a sus hermanos, Elliott ayuda al tierno extraterrestre a
+                comunicarse con su hogar para que lo rescaten, mientras intentan protegerlo de los científicos del
+                gobierno que quieren capturarlo.</p->
+        </div>
+    </div>
+
+    <div id="modal-peli3" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Star Wars: The Empire Strikes Back</h2>
+            <p class="modal-subtitle">Star Wars: El Imperio Contraataca</p>
+            <p->Mientras la Alianza Rebelde es perseguida por el Imperio, el joven Luke Skywalker viaja al planeta
+                pantanoso de Dagobah para entrenar con el sabio Maestro Yoda y convertirse en Jedi. Mientras tanto,
+                Darth Vader persigue implacablemente a Han Solo y a la Princesa Leia para tenderle una trampa a
+                Luke.</p->
+        </div>
+    </div>
+
+    <div id="modal-peli4" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Ghostbusters</h2>
+            <p class="modal-subtitle">Cazafantasmas</p>
+            <p->Tres parapsicólogos universitarios desempleados deciden fundar una empresa en Nueva York dedicada a
+                capturar e investigar ectoplasmas y apariciones espectrales. El negocio se vuelve un éxito justo a
+                tiempo, ya que una antigua deidad amenaza con destruir la ciudad desatando un apocalipsis
+                fantasmagórico.</p->
+        </div>
+    </div>
+
+    <div id="modal-peli5" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>The Breakfast Club</h2>
+            <p class="modal-subtitle">El Club de los Cinco</p>
+            <p->Cinco estudiantes de secundaria de mundos sociales completamente diferentes (el atleta, el cerebro, la
+                criminal, la princesa y la loca) son castigados a pasar todo un sábado encerrados en la biblioteca
+                escolar. Aunque al principio se desprecian, a lo largo del día abren sus corazones y descubren que
+                tienen mucho más en común de lo que pensaban.</p->
+        </div>
+    </div>
+
+
+    <div id="modal-auto1" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>DMC DeLorean</h2>
+            <p class="modal-subtitle">El ícono futurista que desafió al tiempo.</p>
+            <p>Famoso por su carrocería de acero inoxidable sin pintura y sus puertas de ala de gaviota. Aunque su
+                rendimiento mecánico original era modesto, su diseño vanguardista a cargo de Giorgetto Giugiaro y su
+                salto a la pantalla grande lo convirtieron en el símbolo máximo del futurismo ochentero. Es, sin duda,
+                una máquina del tiempo cultural.</p>
+        </div>
+    </div>
+
+    <div id="modal-auto2" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Ferrari Testarossa</h2>
+            <p class="modal-subtitle">La definición pura del deseo y la potencia ochentera.</p>
+            <p>Con sus inconfundibles e imponentes branquias laterales y su motor plano de 12 cilindros, el Testarossa
+                definió la estética del exceso y el alto rendimiento de la década. Protagonista de posters en
+                habitaciones de todo el mundo y de la cultura pop televisiva, este superdeportivo es sinónimo de
+                estatus, velocidad y diseño radical.</p>
+        </div>
+    </div>
+
+    <div id="modal-auto3" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Volkswagen Golf GTI (Mk2)</h2>
+            <p class="modal-subtitle">El rebelde cotidiano que cambió las reglas de la calle.</p>
+            <p>Si los superdeportivos eran para soñar, el Golf GTI Mk2 era el auto con el que la juventud de los 80
+                conquistaba las calles. Este modelo perfeccionó la fórmula del "Hot Hatch": un vehículo compacto,
+                ligero, práctico para el día a día, pero con un alma deportiva y ágil que ponía en aprietos a autos
+                mucho más caros.</p>
+        </div>
+    </div>
+
+    <div id="modal-auto4" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Lamborghini Countach (LP5000 QV)</h2>
+            <p class="modal-subtitle">La fantasía geométrica más radical del asfalto.</p>
+            <p>Aunque nació en los 70, fue en los 80 cuando el Countach alcanzó su forma más extrema, agresiva y
+                popular, gracias a la adición de alerones masivos y pasos de rueda ensanchados. Con su silueta de cuña y
+                sus puertas de tijera, parecía un avión de combate diseñado para la carretera más que un automóvil
+                convencional.</p>
+        </div>
+    </div>
+
+    <div id="modal-auto5" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Porsche 911 Turbo (930)</h2>
+            <p class="modal-subtitle">Pura sofisticación con un alma indomable.</p>
+            <p>Conocido cariñosamente (y con respeto) como el "Widowmaker" (Creador de viudas) debido a su brutal
+                entrega de potencia trasera gracias al turbocompresor y su icónico alerón tipo "cola de ballena". Este
+                auto combinaba el lujo de un vehículo diario con la agresividad de un pura sangre de carreras,
+                requiriendo manos expertas para ser dominado.</p>
+        </div>
+    </div>
+
+
+    <div id="modal-juego1" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Pac-Man</h2>
+            <p class="modal-subtitle">¡Cuidado con los fantasmas, devora el laberinto!</p>
+            <p>Pac-Man es la definición perfecta de "fácil de jugar, difícil de dominar". Su diseño de niveles limpio,
+                su jugabilidad adictiva y la introducción de los primeros "personajes" con personalidad propia en los
+                videojuegos lo transformaron en un clásico atemporal que definió la era dorada de los arcades.</p>
+        </div>
+    </div>
+
+    <div id="modal-juego2" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Donkey Kong</h2>
+            <p class="modal-subtitle">Sube las escaleras y rescata a la damisela del gran simio.</p>
+            <p>Un pilar fundamental en la historia del software interactivo. Donkey Kong introdujo la narrativa visual
+                en los videojuegos de pantalla fija, combinando una dificultad milimétrica con un carisma desbordante
+                que cambió el rumbo de Nintendo para siempre.</p>
+        </div>
+    </div>
+
+    <div id="modal-juego3" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Tetris</h2>
+            <p class="modal-subtitle">Ordena el caos, encaja las piezas antes de que caigan.</p>
+            <p>Una obra maestra del diseño minimalista. Su jugabilidad basada en la geometría y la lógica pura es tan
+                perfecta que no ha envejecido un solo día. Es un título hipnótico que demuestra que no se necesitan
+                gráficos avanzados para crear una adicción absoluta y universal.</p>
+        </div>
+    </div>
+
+    <div id="modal-juego4" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Super Mario Bros</h2>
+            <p class="modal-subtitle">¡El Reino Champiñón te necesita, el fontanero entra en acción!</p>
+            <p>Super Mario Bros. perfeccionó los juegos de plataformas de desplazamiento horizontal. Sus controles
+                precisos, la icónica banda sonora de Koji Kondo y un diseño de niveles magistral sentaron las bases para
+                el futuro del desarrollo de videojuegos en dos dimensiones.</p>
+        </div>
+    </div>
+
+    <div id="modal-juego5" class="modal-overlay">
+        <div class="modal-body">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Street Fighter</h2>
+            <p class="modal-subtitle">¡Demuestra quién es el verdadero rey de la lucha callejera!</p>
+            <p>Aunque su secuela directa en los 90 se llevó la gloria máxima, el Street Fighter original de 1987 fue un
+                pionero indiscutible. Introdujo el sistema de comandos con combinaciones en la palanca y botones para
+                ejecutar técnicas especiales, marcando el inicio de una de las franquicias más competitivas y exitosas
+                de la historia.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tey Company | Enciclopedia Pop 80s</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
