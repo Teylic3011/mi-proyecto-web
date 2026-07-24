@@ -22,7 +22,15 @@
 
     <nav class="navbar">
         <div class="nav-logo">RETRO<span>80S</span></div>
-        <ul class="nav-links">
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><label for="todo">Todos</label></li>
             <li><label for="cine">Cine</label></li>
             <li><label for="autos">Autos</label></li>
@@ -36,8 +44,8 @@
     </header>
 
     <div class="search-container">
-    <input type="text" id="search-input" placeholder="Buscar película, auto, juego..." autocomplete="off">
-</div>
+        <input type="text" id="search-input" placeholder="Buscar película, auto, juego..." autocomplete="off">
+    </div>
 
     <main class="container">
 
@@ -101,11 +109,9 @@
             </div>
         </div>
 
-
         <div class="card item-autos">
             <div class="card-badge">Autos Icónicos</div>
-            <div class="card-img" style="background-image: url('img/autos/DMC\ DeLorean.jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/autos/DMC\ DeLorean.jpg');"></div>
             <div class="card-content">
                 <h3>DMC DeLorean</h3>
                 <p>El DeLorean no se diseñó para seguir tendencias, sino para desafiar al tiempo mismo. Con sus líneas
@@ -118,8 +124,7 @@
 
         <div class="card item-autos">
             <div class="card-badge">Autos Icónicos</div>
-            <div class="card-img" style="background-image: url('img/autos/Ferrari\ Testarossa.jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/autos/Ferrari\ Testarossa.jpg');"></div>
             <div class="card-content">
                 <h3>Ferrari Testarossa</h3>
                 <p>El Testarossa es el arte del exceso hecho automóvil. Cada línea de su carrocería grita audacia,
@@ -132,8 +137,7 @@
 
         <div class="card item-autos">
             <div class="card-badge">Autos Icónicos</div>
-            <div class="card-img" style="background-image: url('img/autos/Volkswagen\ Golf\ GTI\ \(Mk2\).jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/autos/Volkswagen\ Golf\ GTI\ \(Mk2\).jpg');"></div>
             <div class="card-content">
                 <h3>Volkswagen Golf GTI (Mk2)</h3>
                 <p>El verdadero clásico es aquel que lleva la emoción a las masas. El Golf GTI demostró que la
@@ -147,8 +151,7 @@
         <div class="card item-autos">
             <div class="card-badge">Autos Icónicos</div>
             <div class="card-img"
-                style="background-image: url('img/autos/Lamborghini\ Countach\ \(LP5000\ QV\).jpeg');">
-            </div>
+                style="background-image: url('img/autos/Lamborghini\ Countach\ \(LP5000\ QV\).jpeg');"></div>
             <div class="card-content">
                 <h3>Lamborghini Countach (LP5000 QV)</h3>
                 <p>El Countach es un desafío directo a las leyes de lo convencional; un vehículo que se niega a pasar
@@ -161,8 +164,7 @@
 
         <div class="card item-autos">
             <div class="card-badge">Autos Icónicos</div>
-            <div class="card-img" style="background-image: url('img/autos/Porsche\ 911\ Turbo\ \(930\).jfif');">
-            </div>
+            <div class="card-img" style="background-image: url('img/autos/Porsche\ 911\ Turbo\ \(930\).jfif');"></div>
             <div class="card-content">
                 <h3>Porsche 911 Turbo (930)</h3>
                 <p>El 911 Turbo de los 80 es un monumento a la conducción pura y sin filtros. En una época de transición
@@ -173,11 +175,9 @@
             </div>
         </div>
 
-
         <div class="card item-arcade">
             <div class="card-badge">Retro Gaming</div>
-            <div class="card-img" style="background-image: url('img/videojuegos/Pac-Man\ \(1980\).jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Pac-Man\ \(1980\).jpg');"></div>
             <div class="card-content">
                 <h3>Pac-Man (1980)</h3>
                 <p>Lanzado por Namco en 1980, este título revolucionó la industria y se convirtió en un fenómeno
@@ -189,8 +189,7 @@
 
         <div class="card item-arcade">
             <div class="card-badge">Retro Gaming</div>
-            <div class="card-img" style="background-image: url('img/videojuegos/Donkey\ Kong\ \(1981\).jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Donkey\ Kong\ \(1981\).jpg');"></div>
             <div class="card-content">
                 <h3>Donkey Kong (1981)</h3>
                 <p>Diseñado por el legendario Shigeru Miyamoto para Nintendo, este juego de plataformas para arcade puso
@@ -203,8 +202,7 @@
 
         <div class="card item-arcade">
             <div class="card-badge">Retro Gaming</div>
-            <div class="card-img" style="background-image: url('img/videojuegos/Tetris\ \(1984\).jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Tetris\ \(1984\).jpg');"></div>
             <div class="card-content">
                 <h3>Tetris (1984)</h3>
                 <p>Creado en la Unión Soviética por el ingeniero Alekséi Pázhitnov, Tetris es el juego de puzles por
@@ -231,8 +229,7 @@
 
         <div class="card item-arcade">
             <div class="card-badge">Retro Gaming</div>
-            <div class="card-img" style="background-image: url('img/videojuegos/Street\ Fighter\ \(1987\).jpg');">
-            </div>
+            <div class="card-img" style="background-image: url('img/videojuegos/Street\ Fighter\ \(1987\).jpg');"></div>
             <div class="card-content">
                 <h3>Street Fighter (1987)</h3>
                 <p>Desarrollado por Capcom, este juego sentó las bases del género de peleas uno contra uno. Los
@@ -245,15 +242,16 @@
 
     </main>
 
+    <!-- Modales -->
     <div id="modal-peli1" class="modal-overlay">
         <div class="modal-body">
             <a href="#" class="modal-close">&times;</a>
             <h2>Back to the Future</h2>
             <p class="modal-subtitle">Volver al Futuro</p>
-            <p->Marty McFly, un típico adolescente de los 80, es enviado accidentalmente a 1955 a través de una máquina
+            <p>Marty McFly, un típico adolescente de los 80, es enviado accidentalmente a 1955 a través de una máquina
                 del tiempo construida por el excéntrico científico "Doc" Brown. Allí, Marty interrumpe por error el
                 primer encuentro de sus padres, por lo que debe hacer que se enamoren para asegurar su propia existencia
-                y encontrar la forma de regresar al futuro.</p->
+                y encontrar la forma de regresar al futuro.</p>
         </div>
     </div>
 
@@ -262,10 +260,10 @@
             <a href="#" class="modal-close">&times;</a>
             <h2>E.T. the Extra-Terrestrial</h2>
             <p class="modal-subtitle">E.T. el Extraterrestre</p>
-            <p->Un pequeño ser de otro planeta se queda varado en la Tierra. Un niño solitario llamado Elliott lo
+            <p>Un pequeño ser de otro planeta se queda varado en la Tierra. Un niño solitario llamado Elliott lo
                 encuentra y lo esconde en su casa. Junto a sus hermanos, Elliott ayuda al tierno extraterrestre a
                 comunicarse con su hogar para que lo rescaten, mientras intentan protegerlo de los científicos del
-                gobierno que quieren capturarlo.</p->
+                gobierno que quieren capturarlo.</p>
         </div>
     </div>
 
@@ -274,10 +272,10 @@
             <a href="#" class="modal-close">&times;</a>
             <h2>Star Wars: The Empire Strikes Back</h2>
             <p class="modal-subtitle">Star Wars: El Imperio Contraataca</p>
-            <p->Mientras la Alianza Rebelde es perseguida por el Imperio, el joven Luke Skywalker viaja al planeta
+            <p>Mientras la Alianza Rebelde es perseguida por el Imperio, el joven Luke Skywalker viaja al planeta
                 pantanoso de Dagobah para entrenar con el sabio Maestro Yoda y convertirse en Jedi. Mientras tanto,
-                Darth Vader persigue implacablemente a Han Solo y a la Princesa Leia para tenderle una trampa a
-                Luke.</p->
+                Darth Vader persigue implacablemente a Han Solo y a la Princesa Leia para tenderle una trampa a Luke.
+            </p>
         </div>
     </div>
 
@@ -286,10 +284,10 @@
             <a href="#" class="modal-close">&times;</a>
             <h2>Ghostbusters</h2>
             <p class="modal-subtitle">Cazafantasmas</p>
-            <p->Tres parapsicólogos universitarios desempleados deciden fundar una empresa en Nueva York dedicada a
+            <p>Tres parapsicólogos universitarios desempleados deciden fundar una empresa en Nueva York dedicada a
                 capturar e investigar ectoplasmas y apariciones espectrales. El negocio se vuelve un éxito justo a
                 tiempo, ya que una antigua deidad amenaza con destruir la ciudad desatando un apocalipsis
-                fantasmagórico.</p->
+                fantasmagórico.</p>
         </div>
     </div>
 
@@ -298,13 +296,12 @@
             <a href="#" class="modal-close">&times;</a>
             <h2>The Breakfast Club</h2>
             <p class="modal-subtitle">El Club de los Cinco</p>
-            <p->Cinco estudiantes de secundaria de mundos sociales completamente diferentes (el atleta, el cerebro, la
+            <p>Cinco estudiantes de secundaria de mundos sociales completamente diferentes (el atleta, el cerebro, la
                 criminal, la princesa y la loca) son castigados a pasar todo un sábado encerrados en la biblioteca
                 escolar. Aunque al principio se desprecian, a lo largo del día abren sus corazones y descubren que
-                tienen mucho más en común de lo que pensaban.</p->
+                tienen mucho más en común de lo que pensaban.</p>
         </div>
     </div>
-
 
     <div id="modal-auto1" class="modal-overlay">
         <div class="modal-body">
@@ -365,7 +362,6 @@
                 requiriendo manos expertas para ser dominado.</p>
         </div>
     </div>
-
 
     <div id="modal-juego1" class="modal-overlay">
         <div class="modal-body">

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
+    // --- MODALES ---
     const modals = document.querySelectorAll('.modal-overlay');
 
     modals.forEach(modal => {
@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-
+    // --- BÚSQUEDA ---
     const searchInput = document.getElementById('search-input');
     const cards = document.querySelectorAll('.card');
 
@@ -39,7 +38,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- MENÚ RESPONSIVE ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
+    if (menuToggle && navLinks) {
+        // Abrir/cerrar menú
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Cerrar menú al presionar una opción
+        const categoryLabels = navLinks.querySelectorAll('label');
+        categoryLabels.forEach(label => {
+            label.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Cerrar menú si se hace clic fuera
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+
+    // --- AUDIO RETRO ---
     const playRetroSound = (freq = 440, type = 'sine') => {
         try {
             const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -60,15 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
             oscillator.start();
             oscillator.stop(audioCtx.currentTime + 0.15);
         } catch (e) {
-           
+            // Manejo silencioso en caso de restricciones del navegador
         }
     };
 
-
-    const interactiveElements = document.querySelectorAll('.btn, .nav-links label');
+    // Añadido .menu-toggle para incluir sonido retro en el menú hamburguesa
+    const interactiveElements = document.querySelectorAll('.btn, .nav-links label, .menu-toggle');
     interactiveElements.forEach(element => {
-        element.addEventListener('mouseenter', () => playRetroSound(587.33, 'square')); // Nota Re5
-        element.addEventListener('click', () => playRetroSound(880, 'sawtooth'));      // Nota La5
+        element.addEventListener('mouseenter', () => playRetroSound(587.33, 'square')); // Re5
+        element.addEventListener('click', () => playRetroSound(880, 'sawtooth'));      // La5
     });
 
 });
